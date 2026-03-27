@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector.ioST — Premium Digital Services for Growing Businesses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="scrollToSection('home')">
+                <img src="logost.png" alt="Vector.ioST" class="nav-logo-img" />
+                    <span class="logo-text">
+                        Vector.<span class="highlightst">ioST</span>
+                    </span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Our Services</a></li>
+                <li><a href="#how-it-works" class="nav-link">Our Events</a></li>
+                <li><a href="#apps" class="nav-link">Careers</a></li>
+                <li><a href="#pricing" class="nav-link">About Us</a></li>
+                <li><a href="#testimonials" class="nav-link">Stories</a></li>
+                <li><a href="#contact" class="nav-link nav-link-btn">Contact Us →</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <canvas id="particleCanvas"></canvas>
+            <div class="hero-grid"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span class="eyebrow-dot"></span>
+                <span>India's rising full-service digital agency</span>
+                <span class="eyebrow-badge">New ✦</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line" data-line="1">Your Vision.</span>
+                <span class="title-line gradient-text" data-line="2">Our Expertise.</span>
+                <span class="title-line" data-line="3">Real Results.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Vector.ioST is a full-service digital agency delivering websites, apps, marketing, and AI-powered solutions — professionally built, competitively priced, and crafted to grow your business.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-glow" onclick="scrollToSection('contact')">
+                    <span>Get a Free Consultation</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <button class="btn btn-ghost" id="demoBtn">
+                    <div class="play-icon">▶</div>
+                    <span>See Our Work</span>
+                </button>
+            </div>
+            <div class="hero-trust">
+                <div class="trust-avatars">
+                    <div class="avatar" style="background:#f472b6">S</div>
+                    <div class="avatar" style="background:#60a5fa">M</div>
+                    <div class="avatar" style="background:#34d399">E</div>
+                    <div class="avatar" style="background:#fbbf24">J</div>
+                    <div class="avatar" style="background:#a78bfa">+</div>
+                </div>
+                <p>Trusted by <strong>500+</strong> businesses &amp; startups</p>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="200">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="6">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Service Categories</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4">0</span><span class="stat-suffix">.9★</span>
+                    <span class="stat-label">Client Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="dashboard-mockup">
+                <div class="mockup-bar">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <span class="mockup-title">vectoriost.com/services</span>
+                </div>
+                <div class="mockup-content">
+                    <div class="mockup-sidebar">
+                        <div class="sidebar-item active">💻 Websites</div>
+                        <div class="sidebar-item">📱 Mobile Apps</div>
+                        <div class="sidebar-item">📣 Marketing</div>
+                        <div class="sidebar-item">🤖 AI Tools</div>
+                        <div class="sidebar-item">🛠️ Products</div>
+                    </div>
+                    <div class="mockup-main">
+                        <div class="mockup-chart">
+                            <div class="chart-bar" style="height:40%"></div>
+                            <div class="chart-bar" style="height:65%"></div>
+                            <div class="chart-bar" style="height:50%"></div>
+                            <div class="chart-bar" style="height:80%"></div>
+                            <div class="chart-bar active" style="height:95%"></div>
+                            <div class="chart-bar" style="height:70%"></div>
+                            <div class="chart-bar" style="height:85%"></div>
+                        </div>
+                        <div class="mockup-cards">
+                            <div class="m-card"><div class="m-card-label">Projects</div><div class="m-card-val">200+</div></div>
+                            <div class="m-card accent"><div class="m-card-label">Clients</div><div class="m-card-val">500+</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-badge badge-top">
+                <span class="badge-icon">🚀</span>
+                <div><strong>New Project Live!</strong><br><small>E-Commerce Platform</small></div>
+            </div>
+            <div class="floating-badge badge-bottom">
+                <span class="badge-icon">✅</span>
+                <div><strong>Client Revenue +60%</strong><br><small>Post-launch growth</small></div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-inner">
+                <a href="#">Our Websites</a><span class="dot-sep">✦</span>
+                <a href="#">Our Apps</a><span class="dot-sep">✦</span>
+                <a href="#">Our Products</a><span class="dot-sep">✦</span>
+                <a href="#">Our Online Services</a><span class="dot-sep">✦</span>
+                <a href="#">Our offline services</a><span class="dot-sep">✦</span>
+                <a href="https://www.instagram.com/vector.iost/">Our Advertising Services</a><span class="dot-sep">✦</span>
+                <a href="https://www.youtube.com/@vectoriost">Digital Marketing</a><span class="dot-sep">✦</span>
+                <a href="#">E-Commerce</a><span class="dot-sep">✦</span>
+                <a href="#">Web Development</a><span class="dot-sep">✦</span>
+                <a href="https://www.youtube.com/@vectoriost">Follow Us on YouTube</a><span class="dot-sep">✦</span>
+                <a href="https://www.instagram.com/vector.iost/">Follow Us on Instagram</a><span class="dot-sep">✦</span>
+                <a href="#">Follow Us on Facebook</a><span class="dot-sep">✦</span>
+                <a href="https://github.com/VectorIoST">Follow Us on GitHub</a><span class="dot-sep">✦</span>
+                <a href="#">Follow Us on X</a><span class="dot-sep">✦</span>
+                <a href="#">Follow Us on Threads</a><span class="dot-sep">✦</span>
+                <a href="#">Our Websites</a><span class="dot-sep">✦</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="tag">Our Services</div>
+                <h2 class="section-title">Premium Services,<br><em>Real Results</em></h2>
+                <p class="section-subtitle">Every service we offer is professionally delivered and priced to match the value we bring — because quality work deserves investment.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-delay="0" data-service="websites">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">💻</div>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Custom-built, responsive websites with stunning animations, glassmorphism effects, and micro-interactions — designed and delivered for your brand.</p>
+                    <h3>₹40,000 per Website</h3>
+                    <div class="feature-arrow">→</div>
+                </div>
+                <div class="feature-card" data-delay="100" data-service="online-services">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">⚡</div>
+                        <div class="icon-glow yellow"></div>
+                    </div>
+                    <h3>Online Services</h3>
+                    <p>End-to-end online solutions — from SaaS tools to automation workflows — built with blazing-fast performance and 99.99% uptime infrastructure.</p>
+                    <div class="feature-arrow">→</div>
+                </div>
+                <div class="feature-card" data-delay="200" data-service="offline-services">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">🔐</div>
+                        <div class="icon-glow green"></div>
+                    </div>
+                    <h3>Offline Services</h3>
+                    <p>Professional on-site services including technical support, setup, delivery, and hands-on execution — wherever your business needs us.</p>
+                    <div class="feature-arrow">→</div>
+                </div>
+                <div class="feature-card" data-delay="300" data-service="apps">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">📱</div>
+                        <div class="icon-glow pink"></div>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native-quality mobile apps for iOS and Android — fully adaptive, performance-optimized, and tailored to your product vision from UI to deployment.</p>
+                    <div class="feature-arrow">→</div>
+                </div>
+                <div class="feature-card" data-delay="400" data-service="products">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">🤖</div>
+                        <div class="icon-glow purple"></div>
+                    </div>
+                    <h3>Digital Products</h3>
+                    <p>We design and develop proprietary software tools, SaaS products, and digital assets that solve real-world problems and create lasting value for your customers.</p>
+                    <div class="feature-arrow">→</div>
+                </div>
+                <div class="feature-card" data-delay="500" data-service="digital-marketing">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">🔗</div>
+                        <div class="icon-glow cyan"></div>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Data-driven campaigns across SEO, social media, Google Ads, and email — designed to generate qualified leads and measurable ROI for your business.</p>
+                    <div class="feature-arrow">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="tag">Our Events</div>
+                <h2 class="section-title">Events We've<br><em>Organised</em></h2>
+            </div>
+            <div class="steps-wrapper">
+                <div class="steps-line"></div>
+                <div class="event-row">
+                    <div class="event-info">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Vector.io  hackathon</h3>
+                            <p>We organised Vector.io  hackathon — a high-energy event where over 500 college developers competed, collaborated, and built innovative solutions in 24 hours. A launchpad for tomorrow's builders.</p>
+                            <div class="step-tags">
+                                <span>500+ Registrations</span><span>For College Students</span><span>24-Hour Format</span>
+                            </div>
+                            <a href="https://vectoriost.github.io/nmiet.it-dept/" target="_blank" rel="noopener noreferrer" class="event-website-btn">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                Visit Event Website
+                            </a>
+                        </div>
+                    </div>
+                    <div class="event-preview">
+                        <div class="event-iframe-wrap" onclick="window.open('https://vectoriost.github.io/nmiet.it-dept/','_blank')">
+                            <div class="event-browser-bar">
+                                <span class="eb-dot red"></span>
+                                <span class="eb-dot yellow"></span>
+                                <span class="eb-dot green"></span>
+                                <span class="eb-url">https://vectoriost/nmiet.it-dept/</span>
+                                <span class="eb-open-btn">
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                </span>
+                            </div>
+                            <div class="event-iframe-body">
+                                <iframe src="https://vectoriost.github.io/nmiet.it-dept/" scrolling="no" tabindex="-1" aria-hidden="true" sandbox="allow-scripts allow-same-origin"></iframe>
+                                <div class="event-iframe-click-overlay" title="Click to visit event website"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section id="apps" class="apps">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="tag">Careers</div>
+                <h2 class="section-title">Join Our Team,<br><em>Build the Future</em></h2>
+                <p class="section-subtitle">We're hiring passionate people across tech, AI, marketing, and more. Come build something meaningful with us.</p>
+            </div>
+            <div class="apps-tabs">
+                <button class="tab-btn active" data-tab="builder">🏗️ Tech Role</button>
+                <button class="tab-btn" data-tab="ai">🤖 Ai Roles</button>
+                <button class="tab-btn" data-tab="analytics">📊 Offline Roles</button>
+                <button class="tab-btn" data-tab="ecommerce">🛒 Online Roles</button>
+            </div>
+            <div class="apps-grid">
+                <div class="app-card career-card" data-app="builder" onclick="openCareerModal('tech')">
+                    <div class="app-card-bg"></div>
+                    <div class="app-header">
+                        <div class="app-icon">🏗️</div>
+                        <div>
+                            <h3>Tech Role</h3>
+                            <span class="app-badge">5 Openings</span>
+                        </div>
+                    </div>
+                    <p class="app-description">We don't just write code — we build powerful digital experiences. Be a part of it.</p>
+                    <ul class="app-features">
+                        <li><span class="check">✓</span> Full Stack Developer</li>
+                        <li><span class="check">✓</span> DevOps / Cloud Engineer</li>
+                        <li><span class="check">✓</span> Mobile App Developer</li>
+                        <li><span class="check">✓</span> Product Developer / Software Engineer</li>
+                        <li><span class="check">✓</span> Backend Developer</li>
+                    </ul>
+                    <button class="btn btn-outline app-btn" onclick="event.stopPropagation(); openCareerModal('tech')">View Openings →</button>
+                </div>
+
+                <div class="app-card featured career-card" data-app="ai" onclick="openCareerModal('ai')">
+                    <div class="app-card-bg featured-bg"></div>
+                    <div class="featured-ribbon">✦ Hiring Now</div>
+                    <div class="app-header">
+                        <div class="app-icon">🤖</div>
+                        <div>
+                            <h3>AI Roles</h3>
+                            <span class="app-badge badge-accent">5 Openings</span>
+                        </div>
+                    </div>
+                    <p class="app-description">Your creative co-pilot. Build intelligent systems, generate content, write code, and design smart solutions using AI.</p>
+                    <ul class="app-features">
+                        <li><span class="check">✓</span> ML Engineer</li>
+                        <li><span class="check">✓</span> AI Engineer</li>
+                        <li><span class="check">✓</span> NLP Engineer</li>
+                        <li><span class="check">✓</span> Data Scientist</li>
+                        <li><span class="check">✓</span> LLM Engineer</li>
+                    </ul>
+                    <button class="btn btn-primary app-btn" onclick="event.stopPropagation(); openCareerModal('ai')">View Openings →</button>
+                </div>
+
+                <div class="app-card career-card" data-app="analytics" onclick="openCareerModal('offline')">
+                    <div class="app-card-bg"></div>
+                    <div class="app-header">
+                        <div class="app-icon">📊</div>
+                        <div>
+                            <h3>Offline Role</h3>
+                            <span class="app-badge">5 Openings</span>
+                        </div>
+                    </div>
+                    <p class="app-description">Delivering real-world solutions through on-site expertise, hands-on support, and professional services beyond the screen.</p>
+                    <ul class="app-features">
+                        <li><span class="check">✓</span> Delivery Executive (On-time Product Delivery)</li>
+                        <li><span class="check">✓</span> Social Media Influencer / Creator</li>
+                        <li><span class="check">✓</span> Video Content Model (Reels / Ads)</li>
+                        <li><span class="check">✓</span> Sales & Marketing Executive</li>
+                        <li><span class="check">✓</span> Technical Support Engineer</li>
+                         <li><span class="check">✓</span>House Keeping Services Job</li>
+                    </ul>
+                    <button class="btn btn-outline app-btn" onclick="event.stopPropagation(); openCareerModal('offline')">View Openings →</button>
+                </div>
+
+                <div class="app-card career-card" data-app="ecommerce" onclick="openCareerModal('online')">
+                    <div class="app-card-bg"></div>
+                    <div class="app-header">
+                        <div class="app-icon">🛒</div>
+                        <div>
+                            <h3>Online Roles</h3>
+                            <span class="app-badge">4 Openings</span>
+                        </div>
+                    </div>
+                    <p class="app-description">Drive growth and deliver value through digital channels — from marketing to customer success, all remote-friendly.</p>
+                    <ul class="app-features">
+                        <li><span class="check">✓</span> Digital Marketing Manager</li>
+                        <li><span class="check">✓</span> SEO / Content Strategist</li>
+                        <li><span class="check">✓</span> Community Manager</li>
+                        <li><span class="check">✓</span> Customer Success Lead</li>
+                    </ul>
+                    <button class="btn btn-outline app-btn" onclick="event.stopPropagation(); openCareerModal('online')">View Openings →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+
+            <!-- Header -->
+            <div class="section-header">
+                <div class="tag">About Us</div>
+                <h2 class="section-title">From vision to reality<br><em>we make it happen</em></h2>
+                <p class="section-subtitle">We are a passionate team of builders, designers, and strategists united by one goal — delivering exceptional digital experiences that make businesses grow.</p>
+            </div>
+
+            <!-- Mission Strip -->
+            <div class="about-mission">
+                <div class="mission-orb"></div>
+                <div class="mission-text">
+                    <span class="mission-eyebrow">Our Mission</span>
+                    <p>At <strong>Vector.ioST</strong>, we believe every business — from startups to enterprises — deserves world-class digital services at a fair price. We combine creative design, robust engineering, and sharp marketing to deliver results that matter. No free tiers, no shortcuts — just premium work from a team that cares deeply about your success.</p>
+                </div>
+                <div class="mission-values">
+                    <div class="mv-item"><span class="mv-icon">🚀</span><span>Move Fast</span></div>
+                    <div class="mv-item"><span class="mv-icon">🧠</span><span>Think Deep</span></div>
+                    <div class="mv-item"><span class="mv-icon">✦</span><span>Build Beautiful</span></div>
+                    <div class="mv-item"><span class="mv-icon">🌍</span><span>Impact at Scale</span></div>
+                </div>
+            </div>
+
+            <!-- Founders -->
+            <div class="about-founders-label">
+                <span>The Founders</span>
+                <div class="founders-line"></div>
+            </div>
+            <div class="founders-grid">
+
+                <!-- Founder 1 -->
+                <div class="founder-card" data-delay="0">
+                    <div class="founder-card-glow"></div>
+                    <div class="founder-top">
+                        <div class="founder-avatar-wrap">
+                            <div class="founder-avatar founder-av-1">
+                                <img src="sandesh.png" alt="Sandesh Shingankar" class="av-img" />
+                                <div class="av-ring"></div>
+                            </div>
+                            <div class="founder-role-badge">Co-Founder & CTO</div>
+                        </div>
+                        <div class="founder-meta">
+                            <h3 class="founder-name">Sandesh Shingankar</h3>
+                            <p class="founder-org">Vector.ioST</p>
+                            <div class="founder-social">
+                                <a href="https://www.linkedin.com/in/sandeshs-shingankar/" class="fsoc-btn" title="LinkedIn">in</a>
+                                <a href="#" class="fsoc-btn" title="Twitter">𝕏</a>
+                                <a href="https://github.com/sandeshshingankar" class="fsoc-btn" title="GitHub">g</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="founder-bio">A visionary builder and the driving force behind Vector.ioST. Sandesh brings a rare blend of strategic thinking and deep technical expertise, transforming bold ideas into world-class digital products. His passion for intelligent systems and user-centric design shapes the very DNA of the company.</p>
+                    <div class="founder-tags">
+                        <span>Product Strategy</span>
+                        <span>AI & ML</span>
+                        <span>System Architecture</span>
+                        <span>Entrepreneurship</span>
+                    </div>
+                    <div class="founder-quote">
+                        <div class="fq-mark">"</div>
+                        <p>What is 'Kismat me nahi hai?' Mehenat kar! Aur CHHEN LE</p>
+                    </div>
+                </div>
+
+                <!-- Co-Founder -->
+                <div class="founder-card featured-founder" data-delay="150">
+                    <div class="founder-card-glow glow-accent"></div>
+                    <div class="founder-top">
+                        <div class="founder-avatar-wrap">
+                           <div class="founder-avatar founder-av-2">
+                                <img src="tejas.png" alt="Tejas Naiknaware" class="av-img" />
+                                <div class="av-ring ring-accent"></div>
+                            </div>
+                            <div class="founder-role-badge badge-cofounder">Founder & CEO</div>
+                        </div>
+                        <div class="founder-meta">
+                            <h3 class="founder-name">Tejas Naiknaware</h3>
+                            <p class="founder-org">Vector.ioST</p>
+                            <div class="founder-social">
+                                <a href="https://www.linkedin.com/in/tejas-naiknaware/" class="fsoc-btn" title="LinkedIn">in</a>
+                                <a href="#" class="fsoc-btn" title="Twitter">𝕏</a>
+                                <a href="https://github.com/tejasn369" class="fsoc-btn" title="GitHub">g</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="founder-bio">The technical mastermind co-piloting Vector.ioST's engineering vision. Tejas architects the platforms and systems that power everything under the hood — from scalable infrastructure to cutting-edge AI integrations. His precision and relentless drive for excellence set the engineering bar extraordinarily high.</p>
+                    <div class="founder-tags">
+                        <span>Full-Stack Engineering</span>
+                        <span>Cloud Infrastructure</span>
+                        <span>DevOps</span>
+                        <span>AI Integration</span>
+                    </div>
+                    <div class="founder-quote">
+                        <div class="fq-mark">"</div>
+                        <p>Great technology is invisible. It just works — elegantly, reliably, and at any scale you throw at it.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Company Timeline -->
+            <div class="about-timeline">
+                <div class="about-founders-label" style="margin-top: 5rem;">
+                    <span>Our Journey</span>
+                    <div class="founders-line"></div>
+                </div>
+                <div class="timeline-track">
+                    <div class="tl-item">
+                        <div class="tl-dot"></div>
+                        <div class="tl-year">2024</div>
+                        <div class="tl-content">
+                            <h4>The Spark</h4>
+                            <p>Sandesh and Tejas met, shared a vision for intelligent digital tools, and started building in a garage.</p>
+                        </div>
+                    </div>
+                    <div class="tl-connector"></div>
+                    <div class="tl-item">
+                        <div class="tl-dot active"></div>
+                        <div class="tl-year">2025</div>
+                        <div class="tl-content">
+                            <h4>Vector.ioST Founded</h4>
+                            <p>The company was officially incorporated. First client project shipped. First 100+ businesses onboarded within 30 days of launch.</p>
+                        </div>
+                    </div>
+                    <div class="tl-connector"></div>
+                    <div class="tl-item">
+                        <div class="tl-dot active"></div>
+                        <div class="tl-year">2026</div>
+                        <div class="tl-content">
+                            <h4>First App</h4>
+                            <p>Launched our first mobile app product. Crossed 200+ delivered projects. Expanded our team and doubled service offerings.</p>
+                        </div>
+                    </div>
+                    <div class="tl-connector"></div>
+                    <div class="tl-item">
+                        <div class="tl-dot pulse"></div>
+                        <div class="tl-year">2027</div>
+                        <div class="tl-content">
+                            <h4>The Road Ahead</h4>
+                            <p>10,000+ clients. National partnerships. New product launches. Expanding our team and service verticals globally.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="tag">Stories</div>
+                <h2 class="section-title">What Our Clients<br><em>Are Saying</em></h2>
+                <p class="section-subtitle">Real results from real clients. Here's how Vector.ioST has helped businesses grow.</p>
+            </div>
+            <div class="testimonials-track-wrapper">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="quote-mark">"</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">Vector.ioST transformed our entire digital presence. Their team delivered a stunning website and mobile app that exceeded every expectation. Worth every rupee invested.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #ec4899, #f472b6)">SC</div>
+                            <div>
+                                <p class="author-name">Sarah Chen</p>
+                                <p class="author-title">Creative Director @ Vortex Agency</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-mark">"</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">We hired Vector.ioST for our e-commerce platform and the ROI has been incredible. Professional, fast, and the quality of work is unmatched. Our sales doubled in 3 months.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #3b82f6, #60a5fa)">MJ</div>
+                            <div>
+                                <p class="author-name">Marcus Johnson</p>
+                                <p class="author-title">Founder @ LaunchKit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-mark">"</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">The digital marketing campaign Vector.ioST ran for us brought in more leads in one month than we'd seen all year. Their paid services are a genuine investment in growth.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #10b981, #34d399)">ER</div>
+                            <div>
+                                <p class="author-name">Elena Rodriguez</p>
+                                <p class="author-title">Head of Product @ Nexus</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-mark">"</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">As a startup founder, every spend matters. Vector.ioST delivered our app on time, on budget, and beyond spec. The team is responsive and truly cares about the outcome.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #f59e0b, #fbbf24)">DK</div>
+                            <div>
+                                <p class="author-name">David Kim</p>
+                                <p class="author-title">Indie Founder @ Craftly</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-mark">"</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">We've worked with several agencies before, but Vector.ioST is different. They treat your project like their own business. Premium service, premium results — highly recommended.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="background: linear-gradient(135deg, #8b5cf6, #a78bfa)">AP</div>
+                            <div>
+                                <p class="author-name">Aisha Patel</p>
+                                <p class="author-title">CTO @ Flowmind</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-nav">
+                    <button class="t-nav prev" id="tNavPrev">←</button>
+                    <div class="t-dots" id="tDots">
+                        <span class="t-dot active"></span>
+                        <span class="t-dot"></span>
+                        <span class="t-dot"></span>
+                        <span class="t-dot"></span>
+                        <span class="t-dot"></span>
+                    </div>
+                    <button class="t-nav next" id="tNavNext">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="tag">FAQ</div>
+                <h2 class="section-title">Got Questions?<br><em>We've Got Answers</em></h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What services does Vector.ioST offer?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a full range of professional digital services including custom website development, mobile app development, digital marketing, SEO, e-commerce solutions, UI/UX design, AI-powered tools, and both online and offline support services. Every service is tailored to your business goals.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Are all services paid? Is anything free?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our services are paid. We invest real expertise, time, and resources into every project we take on, and our pricing reflects the professional quality we deliver. We do offer a free initial consultation so we can understand your needs before presenting a tailored quote.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I get started with a project?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply reach out via our contact form or buy a service package that fits your needs. Our team will get in touch to schedule a discovery call, understand your requirements, and provide a detailed proposal with timeline and pricing. We move fast once a project is confirmed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How long does it take to deliver a project?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Timelines depend on the scope of the project. A standard website typically takes 1–3 weeks. Mobile apps and complex platforms may take 4–12 weeks. We always provide a clear timeline upfront and keep you updated at every stage of delivery.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Is my data and project information kept secure?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We treat every client's project with strict confidentiality. We're happy to sign NDAs before any work begins, and all project files, credentials, and data are handled securely and never shared with third parties.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you provide post-delivery support?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. All our projects include a support period after delivery to handle any bugs or adjustments. For ongoing maintenance, updates, and growth support, we offer dedicated maintenance packages so your digital products stay fast, secure, and up to date.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-bg">
+            <div class="cta-orb cta-orb-1"></div>
+            <div class="cta-orb cta-orb-2"></div>
+        </div>
+        <div class="section-container cta-content">
+            <div class="cta-eyebrow">Get Started Today</div>
+            <h2>Ready to Build<br><span class="gradient-text">Something Amazing?</span></h2>
+            <p>Join 1,000+ businesses who trust Vector.ioST to deliver premium digital services.</p>
+            <div class="cta-actions">
+                <button class="btn btn-white btn-large" onclick="scrollToSection('contact')">
+                    Buy a Service
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <button class="btn btn-ghost-light btn-large">Talk to Our Team</button>
+            </div>
+            <div class="cta-logos">
+                <span>Trusted by teams at</span>
+                <div class="logo-strip">
+                    <span>Notion</span><span>Stripe</span><span>Vercel</span><span>Linear</span><span>Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy a Service Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <div class="contact-inner">
+                <div class="contact-left">
+                    <div class="tag">Buy a Service</div>
+                    <h2>Let's Build Something Great Together</h2>
+                    <p>Tell us what you need and our team will get back to you with a tailored proposal. All services are professionally delivered and competitively priced.</p>
+                    <div class="contact-perks">
+                        <div class="perk">✓ Custom websites & mobile apps</div>
+                        <div class="perk">✓ Digital marketing & SEO campaigns</div>
+                        <div class="perk">✓ AI-powered tools & automation</div>
+                        <div class="perk">✓ Offline support & on-site services</div>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Alex Johnson" class="form-input" id="nameInput">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="alex@company.com" required class="form-input newsletter-input">
+                        </div>
+                        <div class="form-group">
+                            <label>I'm interested in...</label>
+                            <div class="interest-tags" id="interestTags">
+                                <span class="interest-tag" onclick="toggleTag(this)">Web Design</span>
+                                <span class="interest-tag" onclick="toggleTag(this)">Mobile App</span>
+                                <span class="interest-tag" onclick="toggleTag(this)">Digital Marketing</span>
+                                <span class="interest-tag" onclick="toggleTag(this)">AI & Automation</span>
+                                <span class="interest-tag" onclick="toggleTag(this)">E-Commerce</span>
+                                <span class="interest-tag" onclick="toggleTag(this)">Offline Services</span>
+                                <span class="interest-tag" onclick="toggleTag(this)">Our Products</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-glow subscribe-btn">
+                            <span>Request a Quote</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 19-7z"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="logost.png" alt="Vector.ioST" class="footer-logo-img" />
+                            <span class="logo-text">
+                                Vector.<span class="highlightst">ioST</span>
+                            </span>
+                    </div>
+                    <p>Your trusted digital partner — delivering websites, apps, marketing, and AI solutions that drive real business growth.</p>
+                    <div class="social-links">
+                        <a href="#" title="Twitter" class="social-link">𝕏</a>
+                        <a href="#" title="LinkedIn" class="social-link">in</a>
+                        <a href="#" title="GitHub" class="social-link">⌥</a>
+                        <a href="#" title="Discord" class="social-link">◈</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h5>Services</h5>
+                        <ul>
+                            <li><a href="#features">Our Services</a></li>
+                            <li><a href="#how-it-works">Events</a></li>
+                            <li><a href="#apps">Careers</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Buy a Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Our Portfolio</a></li>
+                            <li><a href="#">Client Stories</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers <span class="hiring">Hiring</span></a></li>
+                            <li><a href="#">Press Kit</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">GDPR</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Vector.ioST. All rights reserved. Made with ♥ for businesses that mean business.</p>
+                <div class="footer-badges">
+                    <span class="f-badge">SOC 2</span>
+                    <span class="f-badge">GDPR</span>
+                    <span class="f-badge">ISO 27001</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="modal-overlay" id="videoModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-video">
+                <div class="video-placeholder">
+                    <div class="video-play-large">▶</div>
+                    <p>Demo Video Coming Soon</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToSection('home')">↑</button>
+
+    <!-- ========== SERVICE MODAL OVERLAY ========== -->
+    <div class="service-overlay" id="serviceOverlay">
+        <div class="service-panel">
+            <!-- Panel Header -->
+            <div class="service-panel-header">
+                <div class="service-panel-title-wrap">
+                    <span class="service-panel-icon" id="servicePanelIcon"></span>
+                    <div>
+                        <h2 class="service-panel-title" id="servicePanelTitle"></h2>
+                        <p class="service-panel-desc" id="servicePanelDesc"></p>
+                    </div>
+                </div>
+                <button class="service-panel-close" id="servicePanelClose" aria-label="Close">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                </button>
+            </div>
+
+            <!-- Panel Body -->
+            <div class="service-panel-body" id="servicePanelBody">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- iframe Lightbox (for clicking a website card) -->
+    <div class="iframe-lightbox" id="iframeLightbox">
+        <div class="iframe-lightbox-inner">
+            <div class="iframe-lightbox-topbar">
+                <div class="iframe-url-bar" id="iframeUrlBar"></div>
+                <div class="iframe-lb-actions">
+                    <a class="iframe-open-btn" id="iframeOpenBtn" target="_blank" rel="noopener noreferrer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        Open
+                    </a>
+                    <button class="iframe-lb-close" id="iframeLbClose">✕</button>
+                </div>
+            </div>
+            <div class="iframe-wrapper">
+                <iframe id="serviceIframe" src="" frameborder="0" allowfullscreen loading="lazy"></iframe>
+                <div class="iframe-loading" id="iframeLoading">
+                    <div class="iframe-spinner"></div>
+                    <span>Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Career Job Modal -->
+    <div class="career-modal-overlay" id="careerModalOverlay">
+        <div class="career-modal-panel" id="careerModalPanel">
+            <button class="career-modal-close" id="careerModalClose" aria-label="Close">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="career-modal-body" id="careerModalBody">
+                <!-- Injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
