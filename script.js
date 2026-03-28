@@ -599,15 +599,11 @@ const SERVICE_DATA = {
         desc: 'Fast, scalable digital services available around the clock.',
         type: 'items',
         items: [
-            { icon: '🌐', title: 'Web Hosting', desc: '99.99% uptime, edge CDN, SSL included. Deploy your site in minutes.', tags: ['CDN', 'SSL', 'Fast'], price: '₹4,999/year' },
-
-            { icon: '🤖', title: 'AI Automation', desc: 'Automate repetitive tasks with intelligent workflows and AI pipelines.', tags: ['GPT', 'No-code', 'Zapier-like'], price: '₹9,999/project' },
-
-            { icon: '💬', title: 'WhatsApp Automation', desc: 'Automate messages, replies, and customer interactions on WhatsApp with smart workflows..', tags: ['Auto Reply', 'Broadcast'], price: '₹1,999/month' },
-
-            { icon: '📧', title: 'Email Campaigns', desc: 'Design, send, and track beautiful email campaigns that convert.', tags: ['Bulk Email', 'Analytics'], price: '₹2,999/month' },
-
-            ]
+            { icon: '🌐', title: 'Web Hosting', desc: '99.99% uptime, edge CDN, SSL included. Deploy your site in minutes.', tags: ['CDN', 'SSL', 'Fast'], price: '₹4,999 – ₹8,999/year' },
+            { icon: '🤖', title: 'AI Automation', desc: 'Automate repetitive tasks with intelligent workflows and AI pipelines.', tags: ['GPT', 'No-code', 'Zapier-like'], price: '₹9,999 – ₹18,999/project' },
+            { icon: '💬', title: 'WhatsApp Automation', desc: 'Automate messages, replies, and customer interactions on WhatsApp with smart workflows.', tags: ['Auto Reply', 'Broadcast'], price: '₹1,999 – ₹4,999/month' },
+            { icon: '📧', title: 'Email Campaigns', desc: 'Design, send, and track beautiful email campaigns that convert.', tags: ['Bulk Email', 'Analytics'], price: '₹2,999 – ₹5,999/month' },
+        ]
     },
     'offline-services': {
         icon: '🔐',
@@ -615,12 +611,12 @@ const SERVICE_DATA = {
         desc: 'Hands-on professional services delivered on-site.',
         type: 'items',
         items: [
-            { icon: '🖨️', title: 'Print & Branding', desc: 'Business cards, banners, brochures, and full brand identity kits printed locally.', tags: ['Branding', 'Print'], price: '₹2,999/project(depends on requirements)' },
-            { icon: '🏢', title: 'On-Site IT Setup', desc: 'Network setup, workstation configuration, and IT infrastructure installation.', tags: ['Networking', 'Hardware'], price: '₹5,999/setup' },
-            { icon: '🧹', title: 'Housekeeping services', desc: 'We provide professional housekeeping services to keep your shop & Home clean, organized, and customer-ready at all times.', tags: ['Cleaning'], price: '₹99 per day (for one room)' },
-            { icon: '📸', title: 'Photography & Video', desc: 'Professional shoots for products, teams, and events with same-day delivery.', tags: ['Media', 'Production'], price: '₹7,999/shoot' },
-            // { icon: '🧑‍🏫', title: 'Training Workshops', desc: 'In-person workshops on digital tools, coding, and entrepreneurship.', tags: ['Education', 'Workshop'], price: '₹4,999/session' },
-            // { icon: '🚚', title: 'Product Delivery', desc: 'Swift on-time delivery of physical products and merchandise.', tags: ['Logistics', 'On-time'], price: '₹499/delivery' },
+            { icon: '🖨️', title: 'Print & Branding', desc: 'Business cards, banners, brochures, and full brand identity kits printed locally.', tags: ['Branding', 'Print'], price: '₹2,999 – ₹9,999/project' },
+            { icon: '🏢', title: 'On-Site IT Setup', desc: 'Network setup, workstation configuration, and IT infrastructure installation.', tags: ['Networking', 'Hardware'], price: '₹5,999 – ₹12,999/setup' },
+            { icon: '🧹', title: 'Housekeeping Services', desc: 'We provide professional housekeeping services to keep your shop & Home clean, organized, and customer-ready at all times.', tags: ['Cleaning'], price: '₹99 – ₹299/day' },
+            { icon: '📸', title: 'Photography & Video', desc: 'Professional shoots for products, teams, and events with same-day delivery.', tags: ['Media', 'Production'], price: '₹7,999 – ₹19,999/shoot' },
+            // { icon: '🧑‍🏫', title: 'Training Workshops', desc: 'In-person workshops on digital tools, coding, and entrepreneurship.', tags: ['Education', 'Workshop'], price: '₹4,999 – ₹9,999/session' },
+            // { icon: '🚚', title: 'Product Delivery', desc: 'Swift on-time delivery of physical products and merchandise.', tags: ['Logistics', 'On-time'], price: '₹499 – ₹999/delivery' },
         ]
     },
     apps: {
@@ -629,10 +625,10 @@ const SERVICE_DATA = {
         desc: 'Native and cross-platform apps we\'ve built and launched.',
         type: 'items',
         items: [
-            { icon: '📱', title: 'VectorTask', desc: 'A productivity app for teams — task management, deadlines, and collaboration.', tags: ['iOS', 'Android', 'Free'], price: 'Free', link: '#' },
-            { icon: '🛒', title: 'ShopVector', desc: 'A full-featured e-commerce app with inventory, orders, and analytics built-in.', tags: ['Android', 'Paid'], price: '₹1,299/year', link: '#' },
-            { icon: '📰', title: 'NewsFlow', desc: 'AI-curated news app delivering personalised feeds with zero noise.', tags: ['iOS', 'Android', 'AI'], price: '₹499/month', link: '#' },
-            { icon: '💪', title: 'FitVector', desc: 'Health & fitness tracker with workout plans, diet logs, and progress charts.', tags: ['iOS', 'Beta'], price: 'Free Beta', link: '#' },
+            { icon: '📱', title: 'VectorTask', desc: 'A productivity app for teams — task management, deadlines, and collaboration.', tags: ['iOS', 'Android', 'Free'], price: 'Free – ₹499/month', link: '#' },
+            { icon: '🛒', title: 'ShopVector', desc: 'A full-featured e-commerce app with inventory, orders, and analytics built-in.', tags: ['Android', 'Paid'], price: '₹1,299 – ₹2,499/year', link: '#' },
+            { icon: '📰', title: 'NewsFlow', desc: 'AI-curated news app delivering personalised feeds with zero noise.', tags: ['iOS', 'Android', 'AI'], price: '₹499 – ₹999/month', link: '#' },
+            { icon: '💪', title: 'FitVector', desc: 'Health & fitness tracker with workout plans, diet logs, and progress charts.', tags: ['iOS', 'Beta'], price: 'Free – ₹299/month', link: '#' },
         ]
     },
     products: {
@@ -641,11 +637,11 @@ const SERVICE_DATA = {
         desc: 'Digital tools and SaaS products built by Vector.ioST.',
         type: 'items',
         items: [
-            { icon: '📱', title: 'Smart OR Case All Device', desc: 'Custom mobile cases with a unique QR code. If your device is lost, anyone can scan the code to contact you securely.', tags: ['Phone Cover', 'Laptop Case', 'Earphone case'], price: 'Starting from ₹399', link: '#' },
-            { icon: '🌸', title: 'Fresh Flower Packet', desc: 'Get fresh pooja flower packs delivered to your home along with a printed Aarti booklet for your daily prayers.', tags: ['No-code', 'SaaS'], price: '₹19 per pack (Free Delivery) | ₹15 with Monthly Subscription', link: '#' },
-            { icon: '🥜', title: 'Dry Food Pack', desc: 'Get fresh and hygienic dry food packs like nuts, dry fruits, and snacks delivered to your home for daily consumption.', tags: ['Dry Fruits', 'Healthy'], price: 'Starting from ₹99', link: '#' },
-            // { icon: '🔗', title: 'LinkForge', desc: 'Smart link-in-bio and QR code generator with detailed click analytics.', tags: ['Free', 'Marketing'], price: 'Free / ₹399/mo', link: '#' },
-            // { icon: '📬', title: 'MailVector', desc: 'Transactional email API with 99.9% deliverability and rich analytics.', tags: ['API', 'Email', 'Dev'], price: '₹1,999/month', link: '#' },
+            { icon: '📱', title: 'Smart OR Case All Device', desc: 'Custom mobile cases with a unique QR code. If your device is lost, anyone can scan the code to contact you securely.', tags: ['Phone Cover', 'Laptop Case', 'Earphone case'], price: '₹399 – ₹799/unit', link: '#' },
+            { icon: '🌸', title: 'Fresh Flower Packet', desc: 'Get fresh pooja flower packs delivered to your home along with a printed Aarti booklet for your daily prayers.', tags: ['No-code', 'SaaS'], price: '₹15 – ₹19/pack', link: '#' },
+            { icon: '🥜', title: 'Dry Food Pack', desc: 'Get fresh and hygienic dry food packs like nuts, dry fruits, and snacks delivered to your home for daily consumption.', tags: ['Dry Fruits', 'Healthy'], price: '₹99 – ₹499/pack', link: '#' },
+            // { icon: '🔗', title: 'LinkForge', desc: 'Smart link-in-bio and QR code generator with detailed click analytics.', tags: ['Free', 'Marketing'], price: 'Free – ₹399/month', link: '#' },
+            // { icon: '📬', title: 'MailVector', desc: 'Transactional email API with 99.9% deliverability and rich analytics.', tags: ['API', 'Email', 'Dev'], price: '₹1,999 – ₹3,999/month', link: '#' },
         ]
     },
     'digital-marketing': {
@@ -654,12 +650,12 @@ const SERVICE_DATA = {
         desc: 'End-to-end marketing services to grow your brand online.',
         type: 'items',
         items: [
-            { icon: '🔍', title: 'SEO Optimisation', desc: 'On-page, off-page, and technical SEO to rank your site on page one.', tags: ['SEO', 'Content', 'Audit'], price: '₹8,999/month' },
-            { icon: '📣', title: 'Social Media Management', desc: 'Content creation, scheduling, and engagement across all major platforms.', tags: ['Instagram', 'LinkedIn', 'X'], price: '₹6,999/month' },
-            { icon: '💰', title: 'Paid Ads (PPC)', desc: 'Google Ads, Meta Ads, and LinkedIn campaigns tuned for maximum ROI.', tags: ['Google Ads', 'Meta', 'ROI'], price: '₹12,999/month' },
-            { icon: '✉️', title: 'Email Marketing', desc: 'Automated drip sequences, newsletters, and re-engagement campaigns.', tags: ['Automation', 'Segments'], price: '₹4,999/month' },
-            { icon: '🎥', title: 'Video & Reels', desc: 'Short-form video content, YouTube SEO, and Reels that go viral.', tags: ['YouTube', 'Reels', 'Creative'], price: '₹9,999/month' },
-            { icon: '📈', title: 'Growth Consulting', desc: 'Strategy sessions and roadmaps to scale your digital presence fast.', tags: ['Strategy', 'Consulting'], price: '₹5,999/session' },
+            { icon: '🔍', title: 'SEO Optimisation', desc: 'On-page, off-page, and technical SEO to rank your site on page one.', tags: ['SEO', 'Content', 'Audit'], price: '₹8,999 – ₹14,999/month' },
+            { icon: '📣', title: 'Social Media Management', desc: 'Content creation, scheduling, and engagement across all major platforms.', tags: ['Instagram', 'LinkedIn', 'X'], price: '₹6,999 – ₹12,999/month' },
+            { icon: '💰', title: 'Paid Ads (PPC)', desc: 'Google Ads, Meta Ads, and LinkedIn campaigns tuned for maximum ROI.', tags: ['Google Ads', 'Meta', 'ROI'], price: '₹12,999 – ₹24,999/month' },
+            { icon: '✉️', title: 'Email Marketing', desc: 'Automated drip sequences, newsletters, and re-engagement campaigns.', tags: ['Automation', 'Segments'], price: '₹4,999 – ₹8,999/month' },
+            { icon: '🎥', title: 'Video & Reels', desc: 'Short-form video content, YouTube SEO, and Reels that go viral.', tags: ['YouTube', 'Reels', 'Creative'], price: '₹9,999 – ₹18,999/month' },
+            { icon: '📈', title: 'Growth Consulting', desc: 'Strategy sessions and roadmaps to scale your digital presence fast.', tags: ['Strategy', 'Consulting'], price: '₹5,999 – ₹9,999/session' },
         ]
     },
     'ai-automation': {
