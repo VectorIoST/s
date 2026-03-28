@@ -661,6 +661,20 @@ const SERVICE_DATA = {
             { icon: '🎥', title: 'Video & Reels', desc: 'Short-form video content, YouTube SEO, and Reels that go viral.', tags: ['YouTube', 'Reels', 'Creative'], price: '₹9,999/month' },
             { icon: '📈', title: 'Growth Consulting', desc: 'Strategy sessions and roadmaps to scale your digital presence fast.', tags: ['Strategy', 'Consulting'], price: '₹5,999/session' },
         ]
+    },
+    'ai-automation': {
+        icon: '🧠',
+        title: 'AI Automation',
+        desc: 'Intelligent automation pipelines and AI-powered workflows for your business.',
+        type: 'items',
+        items: [
+            { icon: '🤖', title: 'GPT-Powered Chatbots', desc: 'Custom AI chatbots trained on your data for customer support and lead capture.', tags: ['GPT', 'Chatbot', 'Support'], price: '₹9,999 – ₹14,999/project' },
+            { icon: '⚙️', title: 'Workflow Automation', desc: 'End-to-end automation of repetitive business processes using AI and no-code pipelines.', tags: ['Zapier-like', 'No-code', 'Triggers'], price: '₹12,999 – ₹18,999/project' },
+            { icon: '📊', title: 'AI Data Analytics', desc: 'AI-driven dashboards and reports that surface actionable insights from your business data.', tags: ['Analytics', 'ML', 'Insights'], price: '₹14,999 – ₹24,999/project' },
+            { icon: '✉️', title: 'Smart Email & CRM Automation', desc: 'Automate follow-ups, segmentation, and CRM updates with AI triggers and conditions.', tags: ['CRM', 'Email', 'AI Triggers'], price: '₹9,999 – ₹15,999/project' },
+            { icon: '🔗', title: 'API & System Integrations', desc: 'Connect your tools and platforms with intelligent API integrations and data sync pipelines.', tags: ['API', 'Integration', 'Sync'], price: '₹11,999 – ₹19,999/project' },
+            { icon: '🎯', title: 'AI Strategy Consulting', desc: 'Expert consulting to map out the best AI automation strategy for your business needs.', tags: ['Consulting', 'Strategy', 'Roadmap'], price: '₹9,999 – ₹12,999/session' },
+        ]
     }
 };
 
