@@ -661,15 +661,15 @@ const SERVICE_DATA = {
     'ai-automation': {
         icon: '🧠',
         title: 'AI Automation',
-        desc: 'Intelligent automation pipelines and AI-powered workflows for your business.',
+        desc: 'Smart automation tools that save time, capture leads, and keep your business running 24/7.',
         type: 'items',
         items: [
-            { icon: '🤖', title: 'GPT-Powered Chatbots', desc: 'Custom AI chatbots trained on your data for customer support and lead capture.', tags: ['GPT', 'Chatbot', 'Support'], price: '₹9,999 – ₹14,999/project' },
-            { icon: '⚙️', title: 'Workflow Automation', desc: 'End-to-end automation of repetitive business processes using AI and no-code pipelines.', tags: ['Zapier-like', 'No-code', 'Triggers'], price: '₹12,999 – ₹18,999/project' },
-            { icon: '📊', title: 'AI Data Analytics', desc: 'AI-driven dashboards and reports that surface actionable insights from your business data.', tags: ['Analytics', 'ML', 'Insights'], price: '₹14,999 – ₹24,999/project' },
-            { icon: '✉️', title: 'Smart Email & CRM Automation', desc: 'Automate follow-ups, segmentation, and CRM updates with AI triggers and conditions.', tags: ['CRM', 'Email', 'AI Triggers'], price: '₹9,999 – ₹15,999/project' },
-            { icon: '🔗', title: 'API & System Integrations', desc: 'Connect your tools and platforms with intelligent API integrations and data sync pipelines.', tags: ['API', 'Integration', 'Sync'], price: '₹11,999 – ₹19,999/project' },
-            { icon: '🎯', title: 'AI Strategy Consulting', desc: 'Expert consulting to map out the best AI automation strategy for your business needs.', tags: ['Consulting', 'Strategy', 'Roadmap'], price: '₹9,999 – ₹12,999/session' },
+            { icon: '🌐', title: 'Website Chatbot', desc: 'AI-powered chatbot embedded on your website to answer queries, capture leads, and guide visitors — 24/7, no human needed.', tags: ['Live Chat', 'Lead Capture', 'AI'], price: '₹9,999 – ₹14,999/project' },
+            { icon: '💬', title: 'WhatsApp Automation', desc: 'Auto-reply to customer messages, send order updates, broadcast offers, and manage conversations on WhatsApp effortlessly.', tags: ['Auto Reply', 'Broadcast', 'WhatsApp'], price: '₹4,999 – ₹9,999/month' },
+            { icon: '📧', title: 'Email Automation', desc: 'Automated welcome emails, follow-ups, abandoned cart reminders, and drip campaigns that convert leads into customers.', tags: ['Drip Campaign', 'Follow-up', 'Email'], price: '₹3,999 – ₹7,999/month' },
+            { icon: '📱', title: 'Instagram & Social DM Automation', desc: 'Auto-respond to DMs, comments, and story replies on Instagram and Facebook with smart AI flows.', tags: ['Instagram', 'Facebook', 'DM Bot'], price: '₹4,999 – ₹8,999/month' },
+            { icon: '🛒', title: 'E-Commerce Order Automation', desc: 'Automate order confirmations, shipping alerts, return requests, and customer support for your online store.', tags: ['Orders', 'Shopify', 'WooCommerce'], price: '₹7,999 – ₹14,999/project' },
+            { icon: '📞', title: 'Lead Follow-Up Automation', desc: 'Never miss a lead — auto-send personalised follow-up messages via WhatsApp, email, or SMS the moment someone fills your form.', tags: ['CRM', 'Leads', 'Follow-up'], price: '₹5,999 – ₹11,999/project' },
         ]
     }
 };
