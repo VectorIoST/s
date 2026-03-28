@@ -7341,3 +7341,19 @@ section { padding: 7rem 0; }
 .highlightst {
     color: #007BFF;
 }
+
+/* ===== AI Automation card & price range additions ===== */
+.icon-glow.orange { background: rgba(251,146,60,0.3); }
+
+.feature-price {
+    display: inline-block;
+    margin-top: 0.85rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--primary-light);
+    background: rgba(99,102,241,0.1);
+    border: 1px solid rgba(99,102,241,0.2);
+    border-radius: 20px;
+    padding: 0.25rem 0.75rem;
+    letter-spacing: 0.01em;
+}
